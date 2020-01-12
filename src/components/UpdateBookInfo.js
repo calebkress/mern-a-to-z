@@ -68,7 +68,7 @@ class UpdateBookInfo extends Component {
             <div className="col-md-8 m-auto">
               <br />
               <Link to="/" className="btn btn-outline-warning float-left">
-                  Show BooK List
+                  Show Book List
               </Link>
             </div>
             <div className="col-md-8 m-auto">
@@ -141,16 +141,17 @@ class UpdateBookInfo extends Component {
                 onChange={this.onChange}
               />
             </div>
+
             <div className='form-group'>
-            <label htmlFor="publisher">Publisher</label>
-              <input
-                type='text'
-                placeholder='Publisher of this Book'
-                name='publisher'
-                className='form-control'
-                value={this.state.publisher}
-                onChange={this.onChange}
-              />
+              <label htmlFor='publisher'>Publisher</label>
+                <input
+                  type='text'
+                  placeholder='Publisher of the book'
+                  name='publisher'
+                  className='form-control'
+                  value={this.state.publisher}
+                  onChange={this.onChange}
+                /> 
             </div>
 
             <button type="submit" className="btn btn-outline-info btn-lg btn-block">Update Book</button>
